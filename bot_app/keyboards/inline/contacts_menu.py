@@ -36,5 +36,4 @@ for contact in contacts_response:
         contacts_list.append(
             InlineKeyboardButton(text=f"{contact['contact_name']}: {contact['value']}", url=contact['link'],
                                  callback_data=contact['contact_name']))
-print(contacts_list)
 contacts_menu_inline.add(*contacts_list)
